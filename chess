@@ -8,11 +8,11 @@ local requestFunc = request or http_request or (syn and syn.request)
 -- USAGE LOGGING (This runs before anything else - logs every execution)
 -- ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
-local WEBHOOK_URL = "https://discord.com/api/webhooks/1484729497453334660/By8r5Ch2fhKdtEeqK313ZkUbeAPEkNhLIsV6oL89kCIRk-I5pPvRX5FshIQRS7CRpHT3"  -- ⚠️ SET YOUR WEBHOOK URL HERE
-local BUG_REPORT_WEBHOOK = "https://discord.com/api/webhooks/1485684697685033221/Q2iFEIkW5SIoE9W_-mifAMs473hZ5Bi7LwkVQXP04q3pWw8cYcSSw7wu_9jZextsD2aV"  -- Bug reports webhook
-local BUG_REPORT_JSONBIN = "69c98bd936566621a85ccafc"  -- Bug reports JSONBin ID
-local JSONBIN_ID = "69bf4349c3097a1dd548e43b"  -- ⚠️ SET YOUR JSONBIN BIN ID HERE (get from jsonbin.io)
-local JSONBIN_KEY = "$2a$10$LS9wIM93YQxluOcJ6CcjOeZXWTW7JOVjZ1WT4Zm.JaLad377Yditi"  -- ⚠️ SET YOUR JSONBIN API KEY HERE (free at jsonbin.io)
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1484729497453334660/By8r5Ch2fhKdtEeqK313ZkUbeAPEkNhLIsV6oL89kCIRk-I5pPvRX5FshIQRS7CRpHT3"
+local BUG_REPORT_WEBHOOK = "https://discord.com/api/webhooks/1485684697685033221/Q2iFEIkW5SIoE9W_-mifAMs473hZ5Bi7LwkVQXP04q3pWw8cYcSSw7wu_9jZextsD2aV"
+local BUG_REPORT_JSONBIN = "69c98bd936566621a85ccafc"
+local JSONBIN_ID = "69bf4349c3097a1dd548e43b"
+local JSONBIN_KEY = "$2a$10$LS9wIM93YQxluOcJ6CcjOeZXWTW7JOVjZ1WT4Zm.JaLad377Yditi" 
 
 local function logExecution()
     if not requestFunc then
