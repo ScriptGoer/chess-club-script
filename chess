@@ -1,14 +1,3 @@
---[[
-    ChessClub Bot - Event-Driven
-    
-    Features:
-    • FEN change detection (no polling)
-    • Time pressure handling
-    • Instant moves on obvious positions
-    • Fast opening moves
-    • Cheater detection
-]]
-
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
 local LocalPlayer = Players.LocalPlayer
